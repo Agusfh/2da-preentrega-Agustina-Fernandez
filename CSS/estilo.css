@@ -67,6 +67,11 @@ main{
     background-color:white
 }
 
+.carousel{
+    width: 90%;
+    text-align:center;
+}
+
 .text{
     color:black;
     text-align:center;
