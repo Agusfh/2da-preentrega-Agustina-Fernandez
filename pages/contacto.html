@@ -32,30 +32,31 @@
 
 </header>
 
-<main>
+<main class="contacto container-fluid">
 
-    <div class="contacto">
-    
-    <br><img src="../images/pilar foto contacto.PNG" height="300px" width="300px"/><br>
+    <div class="row">
 
-    <br><h2>Contanos sobre Vos...</h2><br>
+        <div class="contact col-sm-6 col-md-12 col-lg-12">
 
-    <form action="enviar.php" method="post" enctype="text/plain">
-        <label for="mail">Mail:</label>
-        <input type="email" name="mail"><br>
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" name="nombre"><br>
-        <label for="celular">Celular:</label>
-        <input type="text" name="celular"><br>
-        <label for="clase">Clase de interés:</label>
-        <input type="text" name="clase"><br>
-        <label for="consulta">Escribinos tu Consulta:</label><br>
-        <textarea name="consulta" id="" cols="30" rows="5"></textarea><br>
-        <input type="submit" value="Enviar">
-        <input type="reset"><br><br>
+            <h2 class="contame">Contanos Sobre Vos....</h2>
 
-    </form>
-</div>
+                    <form action="enviar.php" method="post" enctype="text/plain">
+                        <label for="mail">Mail:</label>
+                        <input type="email" name="mail"><br>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" name="nombre"><br>
+                        <label for="celular">Celular:</label>
+                        <input type="text" name="celular"><br>
+                        <label for="clase">Clase de interés:</label>
+                        <input type="text" name="clase"><br>
+                        <label for="consulta">Escribinos tu Consulta:</label><br>
+                        <textarea name="consulta" id="" cols="30" rows="5"></textarea><br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset"><br><br>
+                    </form>
+        </div>
+    </div>
+
 </main>
 
 <footer>
