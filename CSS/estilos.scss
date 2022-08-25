@@ -67,41 +67,51 @@ li a:hover{
 
 main{
     background-color:white
-}
 
-.carro{
-    width: 100%;
-    text-align:center;
-}
 
-.carousel-indicators li{
-height: 20px;
-width: 20px;
-border-radius: 40%;
-border: 2px solid rgb(240, 104, 126);
-text-align: right;
-}
+    .carro{
+        width: 100%;
+        text-align:center;
+    }
 
-.text{
-    color:black;
-    text-align:center;
-    padding: 5px;
-    margin: 5px;
-    letter-spacing: 2px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    text-shadow: 0 0 5px black;
-}
+    .carousel-indicators li{
+        height: 20px;
+        width: 20px;
+        border-radius: 40%;
+        border: 2px solid rgb(240, 104, 126);
+        text-align: center;
+    }
 
-.centro{
-    text-align: center;
-    background-color: white;
-    border:15px solid rgb(235, 140, 63);
-    border-width: 10px;
-    border-style:double;
-    padding: 10px 15px 10px 15px;
-    margin: 15px 25px 15px 15px;
+    @mixin texto ($padding,$margin,$color) {
+        padding: $padding;
+        margin: $margin;
+        color: $color;
+    }
+
+    .text {
+        @include texto(5px,5px,black);
+        text-shadow: 0 0 5px black;
+        letter-spacing: 2px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .centro{
+        text-align: center;
+        background-color: white;
+        border:15px solid orange;
+        border-width: 10px;
+        border-style:double;
+        padding: 10px 15px 10px 15px;
+        margin: 15px 25px 15px 15px;
+    }
+
+    h3{
+        text-align: center;
+        color: black;
+        text-shadow:0 0 10px #e7566e;
+    }
 }
 
 /*estilos footer index*/
@@ -111,56 +121,56 @@ footer{
     background-color: rgb(238, 148, 190);
     font-size: 40px;
     padding: 20px;
-    width: 100%;  
-}
+    width: 100%; 
 
-footer p{
-    text-transform:capitalize;
-    font-size: 20px;
-    text-align:center;
-}
 
-footer i{
+    p{
+        text-transform:capitalize;
+        font-size: 20px;
+        text-align:center;
+    }
+
+  footer i{
     letter-spacing: 20px;
 }
 
-html{
+    html{
     scroll-behavior: smooth;
-}
+    }
 
-footer .redes i{
+  .redes i{
     color: black;
     letter-spacing: 10px;
     padding: 15px;
     margin-top: 5px;
 }
 
-footer .redes i:hover{
+  .redes i:hover{
     color:white;
 }
 
-p::selection{
+  p::selection{
     color: rgb(218, 45, 73);
     background-color: black;
 }
 
-.subir{
-    height: 50px;
-    color: black;
-    width: 50px;
-    line-height: 50px;
-    border: 2px solid black;
-    display: flex;
-    position:fixed;
-    bottom:30px;
-    right: 20px;
-    background-color: rgb(238, 148, 190);
-    border-radius: 50%;
-    text-align: right;
+    .subir{
+        height: 50px;
+        color: black;
+        width: 50px;
+        line-height: 50px;
+        border: 2px solid black;
+        display: flex;
+        position:fixed;
+        bottom:30px;
+        right: 20px;
+        background-color: rgb(238, 148, 190);
+        border-radius: 50%;
+        text-align: right;
+    }
 }
 
 /*estilos presentación*/
-
 
 main{
 
@@ -182,7 +192,11 @@ main{
         justify-content: center;
         text-shadow: 0 0 20px rgb(240, 105, 168)
     }
-    
+
+    .mepresento--nueva {
+        @extend .mepresento;
+        color: black;
+    }
 }
 
 /*estilos clases*/
@@ -202,6 +216,32 @@ main{
         text-align: center;
         margin-top: 10px;
     }
+
+
+$valores: (
+
+    20px: #e7566e,
+    30px: orange,
+    40px: #e7566e,
+    50px: orange
+);
+
+  @each $val, $coli in $valores {
+  .btn--#{$val} {
+    background-color:white;
+    height: 200px;
+    width:400px;
+    border:2px solid black;
+    text-align: center;
+    font-size: $val;
+    line-height: 200px;
+    color: $coli;
+    border-radius: 10px;
+    font-family: cursive;
+    padding: 20px;
+    margin-bottom: 15px;
+    }
+  }
 }
 
 /*estilos fotos*/
