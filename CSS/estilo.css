@@ -23,6 +23,8 @@ header h1 {
   text-align: center;
   text-transform: capitalize;
   font-weight: bold;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 .logo {
@@ -74,11 +76,13 @@ main .text {
   padding: 5px;
   margin: 5px;
   color: black;
-  text-shadow: 0 0 5px black;
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 50px;
 }
 main .centro {
   text-align: center;
@@ -86,7 +90,7 @@ main .centro {
   border: 15px solid orange;
   border-width: 10px;
   border-style: double;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 10px 10px 10px;
   margin: 15px 25px 15px 15px;
 }
 main h3 {
@@ -131,15 +135,15 @@ footer .subir {
   height: 50px;
   color: black;
   width: 50px;
-  line-height: 50px;
-  border: 2px solid black;
+  line-height: 70px;
+  border: 4px solid black;
   display: flex;
   position: fixed;
-  bottom: 30px;
-  right: 20px;
+  bottom: 40px;
+  right: 10px;
   background-color: rgb(238, 148, 190);
-  border-radius: 50%;
-  text-align: right;
+  border-radius: 70%;
+  text-align: center;
 }
 
 /*estilos presentación*/
@@ -165,72 +169,43 @@ main .mepresento--nueva {
 
 /*estilos clases*/
 main .nleft {
-  background-image: url(../images/calendario-1.jpg);
+  background-image: url(../images/CALENDAR.PNG);
   height: 300px;
   background-size: cover;
-  background-position: center;
+  background-position: right;
+  padding: 5px;
+  margin: 40px;
 }
 main .nright h2 {
-  padding: 10px 10px;
-  width: 10px;
+  padding: 5px 5px;
+  width: 5px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
-main .btn--20px {
-  background-color: white;
-  height: 200px;
-  width: 400px;
-  border: 2px solid black;
-  text-align: center;
-  font-size: 20px;
-  line-height: 200px;
+main #class {
+  padding: auto;
+  text-align: left;
+  text-decoration: underline;
+  text-shadow: none;
   color: #e7566e;
-  border-radius: 10px;
-  font-family: cursive;
-  padding: 20px;
-  margin-bottom: 15px;
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  margin: 10px;
 }
-main .btn--30px {
-  background-color: white;
-  height: 200px;
-  width: 400px;
-  border: 2px solid black;
-  text-align: center;
-  font-size: 30px;
-  line-height: 200px;
-  color: orange;
-  border-radius: 10px;
-  font-family: cursive;
-  padding: 20px;
-  margin-bottom: 15px;
+main #clasest {
+  color: rgb(114, 7, 57);
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  display: flex;
+  justify-content: left;
 }
-main .btn--40px {
-  background-color: white;
-  height: 200px;
-  width: 400px;
-  border: 2px solid black;
-  text-align: center;
-  font-size: 40px;
-  line-height: 200px;
-  color: #e7566e;
-  border-radius: 10px;
-  font-family: cursive;
-  padding: 20px;
-  margin-bottom: 15px;
-}
-main .btn--50px {
-  background-color: white;
-  height: 200px;
-  width: 400px;
-  border: 2px solid black;
-  text-align: center;
-  font-size: 50px;
-  line-height: 200px;
-  color: orange;
-  border-radius: 10px;
-  font-family: cursive;
-  padding: 20px;
-  margin-bottom: 15px;
+main .time {
+  margin: 10px;
+  padding: 2px;
 }
 
 /*estilos fotos*/
