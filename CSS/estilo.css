@@ -9,6 +9,11 @@
 
 /*index*/
 /*estilos del header index*/
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /*estilos main index*/
 main background-color:white .carro {
   width: 100%;
@@ -19,6 +24,9 @@ main .carousel-indicators li {
   width: 20px;
   border-radius: 40%;
   border: 2px solid rgb(240, 104, 126);
+  text-align: center;
+}
+main .carousel-inner {
   text-align: center;
 }
 main .text {
@@ -61,6 +69,11 @@ footer p {
   font-size: 20px;
   text-align: center;
 }
+footer .foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 footer footer i {
   letter-spacing: 20px;
 }
@@ -80,6 +93,11 @@ footer p::selection {
   color: rgb(218, 45, 73);
   background-color: black;
 }
+footer .subir-container {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+}
 footer .subir {
   height: 50px;
   color: black;
@@ -87,19 +105,30 @@ footer .subir {
   line-height: 70px;
   border: 4px solid black;
   display: flex;
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
   background-color: rgb(238, 148, 190);
   border-radius: 70%;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 /*estilos presentación*/
-main .presentacion {
+main .align-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .img-container {
   text-align: center;
   padding: 10px 15px 10px 15px;
   margin: 15px 25px 15px 15px;
+  width: 50%;
+}
+@media screen {
+  main .img-container {
+    max-width: 600px;
+    width: 100%;
+  }
 }
 main .mepresento, main .mepresento--nueva {
   color: rgb(240, 105, 168);
@@ -118,12 +147,14 @@ main .mepresento--nueva {
 
 /*estilos clases*/
 main .nleft {
-  background-image: url(../images/CALENDAR.PNG);
   height: 300px;
   background-size: cover;
   background-position: right;
   padding: 5px;
-  margin: 40px;
+}
+main .calen {
+  width: 100%;
+  height: 100%;
 }
 main .nright h2 {
   padding: 5px 5px;

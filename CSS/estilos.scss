@@ -11,6 +11,10 @@
 
 /*estilos del header index*/
 
+.navbar-links{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /*estilos main index*/
 
@@ -29,6 +33,10 @@ main{
         border-radius: 40%;
         border: 2px solid rgb(240, 104, 126);
         text-align:center;
+    }
+
+    .carousel-inner{
+        text-align: center;
     }
 
     @mixin texto ($padding,$margin,$color) {
@@ -81,6 +89,12 @@ footer{
         text-align:center;
     }
 
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
   footer i{
     letter-spacing: 20px;
 }
@@ -105,6 +119,13 @@ footer{
     background-color: black;
 }
 
+
+    .subir-container{
+        position: fixed;
+        bottom:40px;
+        right: 10px;
+    }
+
     .subir{
         height: 50px;
         color: black;
@@ -112,25 +133,35 @@ footer{
         line-height: 70px;
         border: 4px solid black;
         display: flex;
-        position:fixed;
-        bottom:40px;
-        right: 10px;
         background-color: rgb(238, 148, 190);
         border-radius: 70%;
-        text-align: center;
-        
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
     }
+
 }
 
 /*estilos presentación*/
 
 main{
 
-    .presentacion{
+    .align-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-container{
 
         text-align: center;
         padding: 10px 15px 10px 15px;
         margin:15px 25px 15px 15px;
+        width: 50%;
+
+        @media screen {max-width: 600px;
+            width: 100%;
+        }
     }
     
     .mepresento{
@@ -156,12 +187,16 @@ main{
 main{
 
     .nleft{
-        background-image: url(../images/CALENDAR.PNG);
         height: 300px;
         background-size: cover;
         background-position: right;
         padding: 5px;
-        margin: 40px;
+        //margin: 40px;
+    }
+
+    .calen{
+        width: 100%;
+        height: 100%;
     }
     
     .nright h2{
